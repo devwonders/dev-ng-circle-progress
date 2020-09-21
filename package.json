@@ -1,6 +1,6 @@
 {
   "name": "dev-ng-circle-progress",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "build": "ng-packagr -p ng-package.json",
     "build:watch": "npm run build -- -w",
@@ -9,12 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/devwonders/dev-ng-circle-progress"
+    "url": "git+https://github.com/devwonders/dev-ng-circle-progress.git"
   },
-  "author": {
-    "name": "bootsoon",
-    "email": "bootsoon@aliyun.com"
-  },
+  "author": "bootsoon <bootsoon@aliyun.com>",
   "keywords": [
     "angular",
     "circle",
@@ -64,5 +61,8 @@
   },
   "peerDependencies": {
     "@angular/core": ">=4.0.0"
-  }
+  },
+  "description": "Debug only",
+  "homepage": "https://github.com/devwonders/dev-ng-circle-progress#readme",
+  "main": "index.ts"
 }
