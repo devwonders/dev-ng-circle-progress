@@ -41,6 +41,7 @@ export interface CircleProgressOptionsInterface {
     imageSrc?: string;
     imageHeight?: number;
     imageWidth?: number;
+	//New entries
     containerHeight?: string;
     containerWidth?: string;    
     animation?: boolean;
