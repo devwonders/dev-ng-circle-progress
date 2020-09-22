@@ -40,7 +40,10 @@ export interface CircleProgressOptionsInterface {
     subtitleFontWeight?: string;
     imageSrc?: string;
     imageHeight?: number;
-    imageWidth?: number;    
+    imageWidth?: number;
+	//New entries
+    containerHeight?: string;
+    containerWidth?: string;    
     animation?: boolean;
     animateTitle?: boolean;
     animateSubtitle?: boolean;
@@ -97,6 +100,8 @@ export class CircleProgressOptions implements CircleProgressOptionsInterface {
     imageSrc = undefined;
     imageHeight = undefined;
     imageWidth = undefined;
+    containerHeight = undefined;
+    containerWidth = undefined;
     animation = true;
     animateTitle = true;
     animateSubtitle = false;
@@ -258,6 +263,8 @@ export class CircleProgressComponent implements OnChanges, OnInit, OnDestroy {
     @Input() imageSrc: string;
     @Input() imageHeight: number;
     @Input() imageWidth: number;
+    @Input() containerHeight: string;
+    @Input() containerWidth: string;
 
     @Input() animation: boolean;
     @Input() animateTitle: boolean;
@@ -449,8 +456,8 @@ export class CircleProgressComponent implements OnChanges, OnInit, OnDestroy {
         this.svg = {
             viewBox: `0 0 ${boxSize} ${boxSize}`,
             // Set both width and height to '100%' if it's responsive
-            width: this.options.responsive ? '100%' : boxSize,
-            height: this.options.responsive ? '100%' : boxSize,
+            width: this.options.responsive ? this.options.containerWidth : boxSize,
+            height: this.options.responsive ? this.options.containerHeight : boxSize,
             backgroundCircle: {
                 cx: centre.x,
                 cy: centre.y,
