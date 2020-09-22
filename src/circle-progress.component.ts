@@ -40,10 +40,9 @@ export interface CircleProgressOptionsInterface {
     subtitleFontWeight?: string;
     imageSrc?: string;
     imageHeight?: number;
-    imageWidth?: number;
-	//New entries
-    containerHeight?: string;
-    containerWidth?: string;    
+    imageWidth?: number;    
+	containerHeight?: string;
+    containerWidth?: string; 
     animation?: boolean;
     animateTitle?: boolean;
     animateSubtitle?: boolean;
@@ -100,7 +99,7 @@ export class CircleProgressOptions implements CircleProgressOptionsInterface {
     imageSrc = undefined;
     imageHeight = undefined;
     imageWidth = undefined;
-    containerHeight = undefined;
+	containerHeight = undefined;
     containerWidth = undefined;
     animation = true;
     animateTitle = true;
@@ -263,7 +262,7 @@ export class CircleProgressComponent implements OnChanges, OnInit, OnDestroy {
     @Input() imageSrc: string;
     @Input() imageHeight: number;
     @Input() imageWidth: number;
-    @Input() containerHeight: string;
+	@Input() containerHeight: string;
     @Input() containerWidth: string;
 
     @Input() animation: boolean;
