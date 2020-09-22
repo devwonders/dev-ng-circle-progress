@@ -1,10 +1,10 @@
-# ng-circle-progress
+# dev-ng-circle-progress
 
 ## Demo
 
-[Original Package Demo](https://bootsoon.github.io/ng-circle-progress/)
+[Original Package Demo](https://bootsoon.github.io/dev-ng-circle-progress/)
 
-[![demo](https://raw.githubusercontent.com/bootsoon/ng-circle-progress/master/demo.png)](https://bootsoon.github.io/ng-circle-progress/)
+[![demo](https://raw.githubusercontent.com/bootsoon/dev-ng-circle-progress/master/demo.png)](https://bootsoon.github.io/dev-ng-circle-progress/)
 
 ## About
 
@@ -17,13 +17,13 @@ To install this library, run:
 ### Angular 6 projects
 
 ```bash
-$ npm install ng-circle-progress --save
+$ npm install dev-ng-circle-progress --save
 ```
 
 ### Angular 5 or Angular 4 projects
 
 ```bash
-$ npm install ng-circle-progress@1.0.0 --save
+$ npm install dev-ng-circle-progress@1.0.0 --save
 ```
 
 Once you have installed it, you can import it in any Angular application,
@@ -36,8 +36,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-// Import ng-circle-progress
-import { DevNgCircleProgressModule } from 'ng-circle-progress';
+// Import dev-ng-circle-progress
+import { DevNgCircleProgressModule } from 'dev-ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -46,7 +46,7 @@ import { DevNgCircleProgressModule } from 'ng-circle-progress';
   imports: [
     BrowserModule,
 
-    // Specify ng-circle-progress as an import
+    // Specify dev-ng-circle-progress as an import
     DevNgCircleProgressModule.forRoot({
       // set defaults here
       radius: 100,
